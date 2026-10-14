@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right,rgb(33, 2, 76),rgb(4, 47, 177));
+    color:antiquewhite;
+    padding: 10px 0;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Bitcount Ink"
+}
+nav ul{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    font-family: "Caveat"
+}
+.hero{
+    background-color: rgb(176, 164, 111);
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    align-items: center;
+    font-family: "Caveat"
+    /* font-family: "Permanent Marker" */
+
+    
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-left .one{
+    font-size: 60px;
+    color:blueviolet;
+    font-weight: bolder;
+}
+.hero-left .two{
+    font-size: 40px;
+}
+.hero-right img{
+    border-radius: 14px;
+}
+.button-container{
+    padding: 19px 0px ;
+}
+.btn{
+    background-color: brown;
+    color:white;
+    padding: 7px 9px;
+    border: 2px solid rgb(211, 199, 211);
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bolder;
+    transition: all 0.5s;
+    
+
+}
+.btn:hover{
+    background-color: rgb(19, 88, 25);
+}
+    .project {
+            display: flex;
+            align-items: center;
+            background-color: rgb(176, 164, 111);
+            align-items: center;
+           
+        }
+        .project-image img{
+            width: 49.5vw;
+            padding: 4px;
+            border-radius: 34px;
+            
+        }
+        .project-info{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .project-info .text {
+            font-size: 30px;
+            padding: 10px 0;
+            font-weight: bold;
+            font-family: "Caveat"
+            
+        }   
+        .project-info p{
+            font-size: 20px;
+            padding: 10px 0;
+            font-family: "Caveat";
+        }
+
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        footer{
+            background-color: rgb(176, 164, 111);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            
+            
+        }
+        @media screen and (max-width: 950px){
+            nav{
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+
+            }
+            .hero{
+                flex-direction:column-reverse;
+                gap: 12px;
+            }
+
+            .hero-left{
+                align-items:center;
+            }
+            .project{
+                padding: 1px;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .hero-left .one{
+                font-size: 40px;
+                text-align: center;
+            }
+                 .hero-left .two{
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .project{
+                flex-direction: column;
+
+            }
+            .project-image img{
+                width: 80vw;
+                margin: 15px 35px;
+            }
+            .project-info{
+                padding: 15px 23px;
+            }
+        }
+
+        
